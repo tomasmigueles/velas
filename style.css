@@ -1,0 +1,379 @@
+/* PAGINA PRINCIPAL  */
+* {
+  margin: 2;
+  padding: 0%;
+}
+/*  parteuno logo,nombre y carrito*/
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* PAGINA INICIO */
+header {
+  background-color: none;
+}
+
+.header .nav .nav_list {
+  margin: 5px;
+  padding: 5px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header .nav .nav_list .nav_item {
+  margin: 0 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.nav_item:hover {
+  background-color: blanchedalmond;
+}
+.nav_link {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .nav_link {
+    display: none;
+  }
+}
+
+.velas-banner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*  PARTE DOS PAGINA PRINCIPAL*/
+
+.titulo-partedos {
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+  color: burlywood;
+}
+
+.cards {
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.cards-vela {
+  width: 310px;
+  padding: 20px;
+  box-shadow: 2px 2px 5px;
+}
+
+.img-vela {
+  width: 300px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.cards-nombre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cards-descripcion {
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background: black;
+  margin: 10px 5px;
+}
+.enlace-boton {
+  background: burlywood;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+}
+.cards-boton {
+  text-align: center;
+
+  padding: 40px 40px;
+}
+
+/*  PARTE DOS VELAS  PAGINA PRINCIPAL */
+
+.btn1 {
+  background-color: burlywood;
+  border: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.btn1:hover {
+  background-color: antiquewhite;
+}
+
+.boton-principalproductos {
+  align-items: center;
+  text-align: center;
+  margin: 50px 50px;
+}
+
+/*  PARTE DE SUSBRIBITE PAGINA PRINCIPAL  */
+
+.suscribite-formulario {
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.suscribite-nombre {
+  width: 500px;
+  padding: 50px;
+  box-shadow: 1px 1px 2px;
+  border: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+.suscribite-enviar {
+  text-align: center;
+  padding: 15px 32px;
+}
+
+/*  footer PAGINA PRINCIPAL */
+ul {
+  list-style-type: none;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.seccion2-footer {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  background-color: blanchedalmond;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+}
+
+.copy-footer {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.seccion1-footer {
+  text-align: center;
+}
+.fa-brands {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* PAGINA INICIO CON GRID */
+.container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1.9fr 0.6fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "seccion1-footer seccion2-footer"
+    "seccion1-footer seccion2-footer"
+    "seccion3-footer seccion3-footer";
+}
+
+.seccion1-footer {
+  grid-area: seccion1-footer;
+}
+
+.seccion2-footer {
+  grid-area: seccion2-footer;
+}
+
+.seccion3-footer {
+  grid-area: seccion3-footer;
+}
+
+/* PAGINA PRODUCTO */
+
+.container-producto-vela {
+  display: flex;
+  gap: 50px;
+  margin: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.filtro1 {
+  text-align: left;
+  margin-left: 90px;
+}
+
+.titulo-productos {
+  text-align: center;
+  align-items: center;
+}
+/* PAGINA contacto */
+
+.nombre-formulario {
+  margin: 20px;
+}
+
+.apellido-formulario {
+  margin: 20px;
+}
+
+.sexo-hombre-formulario {
+  margin: 20px;
+}
+
+.sexo-mujer-formulario {
+  margin: 20px;
+}
+
+.condiciones-formulario {
+  margin: 20px;
+}
+
+.mensaje-formulario {
+  margin: 20px;
+}
+
+/* PAGINA FAQ */
+
+.pregunta-uno {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.pregunta-dos {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.pregunta-tres {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.pregunta-cuatro {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.pregunta-cinco {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.pregunta-seis {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+/* PAGINA Nosotros */
+
+.sobrenosotros-titulo {
+  text-align: center;
+}
+
+.nosotros {
+  margin: 100px;
+}
+
+.quienessomos-titulo {
+  text-align: center;
+}
+.quienes-somos {
+  margin: 100px;
+}
+
+.mision-titulo {
+  text-align: center;
+}
+
+.mision {
+  margin: 100px;
+}
+
+.contactarnos-titulo {
+  text-align: center;
+}
+
+.contactar-nosotros {
+  margin: 100px;
+}
+
+/* PAGINA INICIO CON GRID */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 6.1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
