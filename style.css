@@ -16,6 +16,19 @@ a:visited {
 /* PAGINA INICIO */
 header {
   background-color: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo-samjr {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+nav {
+  padding-right: 100px;
 }
 
 .header .nav .nav_list {
@@ -42,13 +55,14 @@ header {
   color: black;
 }
 
-@media screen and (max-width: 900px) {
-  .nav_link {
-    display: none;
-  }
-  .nav_list {
-    display: flex;
+@media screen and (max-width: 700px) {
+  header {
     flex-direction: column;
+  }
+  .logo-samjr {
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
   }
 }
 
@@ -244,37 +258,60 @@ footer {
 }
 
 .titulo-productos {
-  text-align: center;
-  align-items: center;
+  padding-left: 90px;
+  margin: 50px;
+  color: burlywood;
 }
 
 /* PAGINA contacto */
 
+.titulo-contactanos {
+  padding-left: 90px;
+  margin: 50px;
+  color: burlywood;
+}
+
 .nombre-formulario {
-  margin: 20px;
+  margin: 50px;
 }
 
 .apellido-formulario {
-  margin: 20px;
+  margin: 50px;
+}
+
+.mail-formulario {
+  margin: 50px;
 }
 
 .sexo-hombre-formulario {
-  margin: 20px;
+  margin: 50px;
 }
 
 .sexo-mujer-formulario {
-  margin: 20px;
+  margin: 50px;
 }
 
 .condiciones-formulario {
-  margin: 20px;
+  margin: 50px;
 }
 
 .mensaje-formulario {
-  margin: 20px;
+  margin: 50px;
+}
+
+fieldset {
+  margin: 140px;
+  margin-top: 0px;
+  margin-bottom: 0%;
 }
 
 /* PAGINA FAQ */
+
+.titulo-faq {
+  padding-left: 90px;
+  margin: 50px;
+  color: burlywood;
+}
 
 .pregunta-uno {
   margin-left: 50px;
