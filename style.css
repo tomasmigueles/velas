@@ -46,6 +46,10 @@ header {
   .nav_link {
     display: none;
   }
+  .nav_list {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .velas-banner {
@@ -246,15 +250,11 @@ footer {
   margin: 20px;
 }
 
-.filtro1 {
-  text-align: left;
-  margin-left: 90px;
-}
-
 .titulo-productos {
   text-align: center;
   align-items: center;
 }
+
 /* PAGINA contacto */
 
 .nombre-formulario {
