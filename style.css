@@ -220,7 +220,7 @@ footer {
   margin: 5px;
 }
 
-/* PAGINA INICIO CON GRID */
+/* PAGINA INICIO-footer CON GRID */
 .container-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -245,29 +245,52 @@ footer {
 .seccion3-footer {
   grid-area: seccion3-footer;
 }
+/* PAGINA completa INICIO CON GRID */
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 6.1fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
 /* PAGINA PRODUCTO */
 
 .container-producto-vela {
   display: flex;
-  gap: 50px;
-  margin: 50px;
+  gap: 20px;
+  margin: 30px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
 }
 
 .titulo-productos {
-  padding-left: 90px;
-  margin: 50px;
+  text-align: left;
+  margin-left: 130px;
   color: burlywood;
 }
 
 /* PAGINA contacto */
 
 .titulo-contactanos {
-  padding-left: 90px;
-  margin: 50px;
+  text-align: left;
+  margin-left: 130px;
   color: burlywood;
 }
 
@@ -308,102 +331,85 @@ fieldset {
 /* PAGINA FAQ */
 
 .titulo-faq {
-  padding-left: 90px;
-  margin: 50px;
+  text-align: left;
+  margin-left: 130px;
   color: burlywood;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pregunta-uno pregunta-uno"
+    "pregunta-dos pregunta-dos"
+    "pregunta-tres pregunta-tres"
+    "pregunta-cuatro pregunta-cuatro"
+    "pregunta-cinco pregunta-cinco"
+    "pregunta-seis pregunta-seis";
+}
+.preguntas {
+  align-items: center;
+  text-align: justify;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 .pregunta-uno {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
+  grid-area: pregunta-uno;
 }
 
 .pregunta-dos {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
+  grid-area: pregunta-dos;
 }
 
 .pregunta-tres {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
+  grid-area: pregunta-tres;
 }
 
 .pregunta-cuatro {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
+  grid-area: pregunta-cuatro;
 }
 
 .pregunta-cinco {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
+  grid-area: pregunta-cinco;
 }
 
 .pregunta-seis {
-  margin-left: 50px;
-  margin-right: 50px;
-  display: inline-block;
+  grid-area: pregunta-seis;
 }
 
 /* PAGINA Nosotros */
 
-.sobrenosotros-titulo {
-  text-align: center;
-}
-
-.nosotros {
-  margin: 100px;
-}
-
-.quienessomos-titulo {
-  text-align: center;
-}
-.quienes-somos {
-  margin: 100px;
-}
-
-.mision-titulo {
-  text-align: center;
-}
-
-.mision {
-  margin: 100px;
-}
-
-.contactarnos-titulo {
-  text-align: center;
-}
-
-.contactar-nosotros {
-  margin: 100px;
-}
-
-/* PAGINA INICIO CON GRID */
-
-.container {
+.container-nosotros {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 6.1fr 0.2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "sobre-nosotros quienes-somos"
+    "sobre-nosotros quienes-somos"
+    "mision contactar-nosotros"
+    "mision contactar-nosotros";
 }
 
-.header {
-  grid-area: header;
+.sobre-nosotros {
+  grid-area: sobre-nosotros;
 }
 
-.main {
-  grid-area: main;
+.mision {
+  grid-area: mision;
 }
 
-.footer {
-  grid-area: footer;
+.quienes-somos {
+  grid-area: quienes-somos;
+}
+
+.contactar-nosotros {
+  grid-area: contactar-nosotros;
 }
