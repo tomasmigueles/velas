@@ -426,3 +426,8 @@ fieldset {
   margin-left: 130px;
   color: burlywood;
 }
+
+iframe {
+  display: block;
+  margin: 0px auto;
+}
