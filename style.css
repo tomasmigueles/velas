@@ -389,27 +389,40 @@ fieldset {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 0px 0px;
+  gap: 0px 50px;
   grid-auto-flow: row;
   grid-template-areas:
-    "sobre-nosotros quienes-somos"
-    "sobre-nosotros quienes-somos"
+    "sobre-nosotros sobre-nosotros"
+    "quienes-somos quienes-somos"
     "mision contactar-nosotros"
     "mision contactar-nosotros";
 }
 
 .sobre-nosotros {
   grid-area: sobre-nosotros;
+  text-align: justify;
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .mision {
   grid-area: mision;
+  margin-left: 130px;
 }
 
 .quienes-somos {
   grid-area: quienes-somos;
+  margin-left: 130px;
+  margin-right: 130px;
 }
 
 .contactar-nosotros {
   grid-area: contactar-nosotros;
+  margin-right: 100px;
+}
+
+.nosotros-titulo {
+  text-align: left;
+  margin-left: 130px;
+  color: burlywood;
 }
