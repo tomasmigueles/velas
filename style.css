@@ -332,54 +332,14 @@ fieldset {
 
 .titulo-faq {
   text-align: left;
-  margin-left: 130px;
+  margin-left: 140px;
   color: burlywood;
 }
-
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "pregunta-uno pregunta-uno"
-    "pregunta-dos pregunta-dos"
-    "pregunta-tres pregunta-tres"
-    "pregunta-cuatro pregunta-cuatro"
-    "pregunta-cinco pregunta-cinco"
-    "pregunta-seis pregunta-seis";
-}
 .preguntas {
-  align-items: center;
+  margin-left: 130px;
+  margin-right: 130px;
   text-align: justify;
-  margin-left: 120px;
-  margin-right: 120px;
-}
-
-.pregunta-uno {
-  grid-area: pregunta-uno;
-}
-
-.pregunta-dos {
-  grid-area: pregunta-dos;
-}
-
-.pregunta-tres {
-  grid-area: pregunta-tres;
-}
-
-.pregunta-cuatro {
-  grid-area: pregunta-cuatro;
-}
-
-.pregunta-cinco {
-  grid-area: pregunta-cinco;
-}
-
-.pregunta-seis {
-  grid-area: pregunta-seis;
+  padding: 10px;
 }
 
 /* PAGINA Nosotros */
@@ -430,4 +390,14 @@ fieldset {
 iframe {
   display: block;
   margin: 0px auto;
+}
+
+/* PAGINA carrito */
+
+.hola-carrito {
+  text-align: center;
+}
+
+.carrito-hola {
+  color: burlywood;
 }
