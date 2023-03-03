@@ -1,71 +1,16 @@
 /* PAGINA PRINCIPAL  */
 * {
-  margin: 2;
+  margin: 0%;
   padding: 0%;
-}
-/*  parteuno logo,nombre y carrito*/
-
-a:link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
 }
 
 /* PAGINA INICIO */
-header {
-  background-color: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+.nav-link:hover {
+  background-color: burlywood;
 }
-.logo-samjr {
-  display: flex;
-  align-items: center;
-  padding-left: 50px;
+.dropdown-menu .dropdown-item:hover {
+  background-color: burlywood;
 }
-
-nav {
-  padding-right: 100px;
-}
-
-.header .nav .nav_list {
-  margin: 5px;
-  padding: 5px;
-  height: 100px;
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.header .nav .nav_list .nav_item {
-  margin: 0 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.nav_item:hover {
-  background-color: blanchedalmond;
-}
-.nav_link {
-  text-decoration: none;
-  color: black;
-}
-
-@media screen and (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
-  .logo-samjr {
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-  }
-}
-
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -86,64 +31,12 @@ body {
   margin: 50px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
 }
-
-.cards-vela {
-  width: 310px;
-  padding: 20px;
-  box-shadow: 2px 2px 5px;
+.cards .card .btn:hover {
+  background-color: antiquewhite;
 }
-
-.img-vela {
-  width: 300px;
-  box-shadow: 1px 1px 5px black;
-}
-
-.cards-nombre {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.cards-descripcion {
-  text-align: center;
-}
-
-hr {
-  width: 100%;
-  height: 1px;
-  background: black;
-  margin: 10px 5px;
-}
-.enlace-boton {
-  background: burlywood;
-  padding: 8px 20px;
-  color: black;
-  text-decoration: none;
-}
-.cards-boton {
-  text-align: center;
-
-  padding: 40px 40px;
-}
-
-/*  PARTE DOS VELAS  PAGINA PRINCIPAL */
-
-.btn1 {
-  background-color: burlywood;
-  border: 10px;
-  padding: 15px 32px;
-  text-align: center;
-  color: black;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  align-items: center;
-}
-
-.btn1:hover {
+.boton-principalproductos .btn:hover {
   background-color: antiquewhite;
 }
 
@@ -174,11 +67,6 @@ hr {
   text-align: center;
   color: black;
   font-size: 16px;
-}
-
-.suscribite-enviar {
-  text-align: center;
-  padding: 15px 32px;
 }
 
 /*  footer PAGINA PRINCIPAL */
@@ -247,7 +135,7 @@ footer {
 }
 /* PAGINA completa INICIO CON GRID */
 
-.container {
+.container-index {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 6.1fr 0.2fr;
