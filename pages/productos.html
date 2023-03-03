@@ -13,274 +13,299 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Productos</title>
   </head>
   <body class="body">
     <header class="header">
-      <a class="logo-samjr" href="../index.html">
-        <img
-          class="logo-samjr"
-          src="../img/logo samjr.png"
-          alt="logo de la marca"
-      /></a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">Sam jr</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="sobrenotros.html"
+                      >¿Quienes somos?</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contacto.html">Contacto</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="faq.html">Faq</a>
+                  </li>
+                </ul>
+              </li>
 
-      <nav class="nav">
-        <ul class="nav_list">
-          <li class="nav_item">
-            <a class="nav_link" href="productos.html">Productos</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="faq.html">FAQ</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="sobrenotros.html">Nosotros</a>
-          </li>
-          <li class="nav_item">
-            <a class="nav_link" href="carrito.html">Carrito(0)$0</a>
-          </li>
-        </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-cart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                    />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
       <div class="titulo-productos">
+        <div class="py-5"></div>
         <h2>Nuestros productos</h2>
       </div>
-
       <section class="container-producto-vela">
-        <div class="cards-vela">
-          <div class="cards-nombre">
-            <img
-              class="img-vela"
-              src="../img/velaandrea.png"
-              alt="andrea vela"
-            />
-            <h3>Vela Andrea</h3>
-          </div>
-          <hr />
-          <div class="cards-descripcion">
-            <label for="Aroma">Aroma</label>
-            <select name="Aroma" id="Aroma">
-              <option value="Frutos rojos">Frutos rojos</option>
-              <option value="Pera">Pera</option>
-              <option value="Flores">Flores</option>
-            </select>
-            <label for="Cantidad">Cantidad</label>
-            <select name="Cantidad" id="Cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <hr />
-          <div class="cards-boton">
-            <a class="enlace-boton" href="#">Agregar al carrito</a>
+        <div class="card" style="width: 20rem">
+          <img src="../img/velaandrea.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="text-center text-black">Vela andrea</h5>
+            <div class="cards-descripcion">
+              <label for="Aroma">Aroma</label>
+              <select name="Aroma" id="Aroma">
+                <option value="Frutos rojos">Frutos rojos</option>
+                <option value="Pera">Pera</option>
+                <option value="Flores">Flores</option>
+              </select>
+              <label for="Cantidad">Cantidad</label>
+              <select name="Cantidad" id="Cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <hr />
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
           </div>
         </div>
 
-        <div class="cards-vela">
-          <div class="cards-nombre">
-            <img
-              class="img-vela"
-              src="../img/velajaviera.png"
-              alt="javiera vela"
-            />
-            <h3>Vela Javiera</h3>
-          </div>
-          <hr />
-          <div class="cards-descripcion">
-            <label for="Aroma">Aroma</label>
-            <select name="Aroma" id="Aroma">
-              <option value="Vainilla">Vainilla</option>
-              <option value="Gardenia">Gardenia</option>
-              <option value="Jazmin">Jazmin</option>
-            </select>
-            <label for="Cantidad">Cantidad</label>
-            <select name="Cantidad" id="Cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <hr />
-          <div class="cards-boton">
-            <a class="enlace-boton" href="#">Agregar al carrito</a>
+        <div class="card" style="width: 20rem">
+          <img src="../img/velajaviera.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="text-center text-black">Vela javiera</h5>
+            <div class="cards-descripcion">
+              <label for="Aroma">Aroma</label>
+              <select name="Aroma" id="Aroma">
+                <option value="Vainilla">Vainilla</option>
+                <option value="Gardenia">Gardenia</option>
+                <option value="Jazmin">Jazmin</option>
+              </select>
+              <label for="Cantidad">Cantidad</label>
+              <select name="Cantidad" id="Cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <hr />
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
           </div>
         </div>
 
-        <div class="cards-vela">
-          <div class="cards-nombre">
-            <img
-              class="img-vela"
-              src="../img/velapastapiedra1.png"
-              alt="vela bella cora"
-            />
-            <h3>Vela Pasta piedra "La bella cora"</h3>
-          </div>
-          <hr />
-          <div class="cards-descripcion">
-            <label for="Aroma">Aroma</label>
-            <select name="Aroma" id="Aroma">
-              <option value="Vainilla">Vainilla</option>
-              <option value="Gardenia">Gardenia</option>
-              <option value="Jazmin">Jazmin</option>
-            </select>
-            <label for="Color">Color</label>
-            <select name="Color" id="Color">
-              <option value="Marron">Marron</option>
-              <option value="Violeta">Violeta</option>
-            </select>
-            <label for="Cantidad">Cantidad</label>
-            <select name="Cantidad" id="Cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <hr />
-          <div class="cards-boton">
-            <a class="enlace-boton" href="#">Agregar al carrito</a>
-          </div>
-        </div>
-
-        <div class="cards-vela">
-          <div class="cards-nombre">
-            <img
-              class="img-vela"
-              src="../img/velapastapiedra2.png"
-              alt="vela matilda"
-            />
-            <h3>Vela Pasta piedra "Matilda"</h3>
-          </div>
-          <hr />
-          <div class="cards-descripcion">
-            <label for="Aroma">Aroma</label>
-            <select name="Aroma" id="Aroma">
-              <option value="Vainilla">Vainilla</option>
-              <option value="Gardenia">Gardenia</option>
-              <option value="Jazmin">Jazmin</option>
-            </select>
-            <label for="Cantidad">Cantidad</label>
-            <select name="Cantidad" id="Cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <hr />
-          <div class="cards-boton">
-            <a class="enlace-boton" href="#">Agregar al carrito</a>
+        <div class="card" style="width: 20rem">
+          <img
+            src="../img/velapastapiedra1.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="text-center text-black">
+              Vela Pasta piedra
+              <p>"La bella cora"</p>
+            </h5>
+            <div class="cards-descripcion">
+              <label for="Aroma">Aroma</label>
+              <select name="Aroma" id="Aroma">
+                <option value="Vainilla">Vainilla</option>
+                <option value="Gardenia">Gardenia</option>
+                <option value="Jazmin">Jazmin</option>
+              </select>
+              <label for="Color">Color</label>
+              <select name="Color" id="Color">
+                <option value="Marron">Marron</option>
+                <option value="Violeta">Violeta</option>
+              </select>
+              <label for="Cantidad">Cantidad</label>
+              <select name="Cantidad" id="Cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <hr />
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
           </div>
         </div>
 
-        <div class="cards-vela">
-          <div class="cards-nombre">
-            <img
-              class="img-vela"
-              src="../img/velapastapiedra3.png"
-              alt="vela bella cora"
-            />
-            <h3>Vela Pasta piedra "Violeta"</h3>
-          </div>
-          <hr />
-          <div class="cards-descripcion">
-            <label for="Aroma">Aroma</label>
-            <select name="Aroma" id="Aroma">
-              <option value="Vainilla">Vainilla</option>
-              <option value="Gardenia">Gardenia</option>
-              <option value="Jazmin">Jazmin</option>
-              <option value="Floral">Floral</option>
-              <option value="Coco">Coco</option>
-            </select>
-            <label for="Color">Color</label>
-            <select name="Color" id="Color">
-              <option value="Marron">Marron</option>
-              <option value="Violeta">Violeta</option>
-              <option value="Blanco">Blanco</option>
-              <option value="Verde">Verde</option>
-              <option value="Azul">Azul</option>
-            </select>
-            <label for="Cantidad">Cantidad</label>
-            <select name="Cantidad" id="Cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <hr />
-          <div class="cards-boton">
-            <a class="enlace-boton" href="#">Agregar al carrito</a>
-          </div>
-        </div>
-
-        <div class="cards-vela">
-          <div class="cards-nombre">
-            <img
-              class="img-vela"
-              src="../img/alfonsina.png"
-              alt="vela alfonsina"
-            />
-            <h3>Vela Alfonsina</h3>
-          </div>
-          <hr />
-          <div class="cards-descripcion">
-            <label for="Aroma">Aroma</label>
-            <select name="Aroma" id="Aroma">
-              <option value="Vainilla">Vainilla</option>
-              <option value="Gardenia">Gardenia</option>
-            </select>
-            <label for="Cantidad">Cantidad</label>
-            <select name="Cantidad" id="Cantidad">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </div>
-          <hr />
-          <div class="cards-boton">
-            <a class="enlace-boton" href="#">Agregar al carrito</a>
+        <div class="card" style="width: 20rem">
+          <img
+            src="../img/velapastapiedra2.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="text-center text-black">Vela Pasta piedra "Matilda"</h5>
+            <div class="cards-descripcion">
+              <label for="Aroma">Aroma</label>
+              <select name="Aroma" id="Aroma">
+                <option value="Vainilla">Vainilla</option>
+                <option value="Gardenia">Gardenia</option>
+                <option value="Jazmin">Jazmin</option>
+              </select>
+              <label for="Cantidad">Cantidad</label>
+              <select name="Cantidad" id="Cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+            </div>
+            <hr />
+            <a href="#" class="btn btn-primary">Agregar al carrito</a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container-footer">
-        <div class="seccion1-footer">
-          <p>Buscanos en las redes</p>
-          <a href=""></a><i class="fa-brands fa-instagram"></i> <a href=""></a
-          ><i class="fa-brands fa-facebook"></i>
+    <footer class="bg-light text-black pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase md-4 font-weight-bold text-warning">
+              Sam jr
+            </h5>
+            <p>Emprendimiento familiar.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Acerca de
+            </h5>
+            <p>
+              <a href="#" class="text-black" style="text-decoration: none"
+                >inicio</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-black" style="text-decoration: none"
+                >Productos</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-black" style="text-decoration: none"
+                >Contacto</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-black" style="text-decoration: none"
+                >Nosotros</a
+              >
+            </p>
+            <p>
+              <a href="#" class="text-black" style="text-decoration: none"
+                >Faq</a
+              >
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Contacto
+            </h5>
+            <p><i class="fas fa-home mr-3"></i>GBA, Vicente lopez</p>
+            <p><i class="fas fa-envelope mr-3"></i>info@samjr.com</p>
+            <p><i class="fas fa-phone mr-3"></i>(123) 456-7890</p>
+          </div>
         </div>
-        <div class="seccion2-footer">
-          <p>Acerca de</p>
-          <ul>
-            <li><a class="footer-link" href="../index.html">Inicio</a></li>
-            <li>
-              <a class="footer-link" href="productos.html">Productos</a>
-            </li>
-            <li>
-              <a class="footer-link" href="contacto.html">Contacto</a>
-            </li>
-            <li><a class="footer-link" href="faq.html">FAQ</a></li>
-            <li>
-              <a class="footer-link" href="sobrenotros.html">Nosotros</a>
-            </li>
-          </ul>
-        </div>
-        <div class="seccion3-footer">
-          <p class="copy-footer">
-            © Copyright 2020 Samjr | Todos los derechos reservados | Términos de
-            política | privacidad del servicio
-          </p>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col md-7 col-lg-8">
+            <p>
+              © Copyright 2020 Samjr | Todos los derechos reservados | Términos
+              de política | Privacidad del servicio
+              <a href="#" style="text-decoration: none">
+                <strong class="text-warning">SamJr</strong>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="lisi-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-black"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="btn-floating btn-sm text-black"
+                    style="font-size: 23px"
+                  >
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

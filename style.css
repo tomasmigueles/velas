@@ -34,10 +34,10 @@ body {
   margin: 10px;
 }
 .cards .card .btn:hover {
-  background-color: antiquewhite;
+  background-color: burlywood;
 }
 .boton-principalproductos .btn:hover {
-  background-color: antiquewhite;
+  background-color: burlywood;
 }
 
 .boton-principalproductos {
@@ -50,89 +50,19 @@ body {
 
 .suscribite-formulario {
   display: flex;
-  gap: 50px;
-  margin: 50px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px;
   text-align: center;
 }
 
 .suscribite-nombre {
-  width: 500px;
-  padding: 50px;
-  box-shadow: 1px 1px 2px;
-  border: 10px;
+  box-shadow: 1px 1px 1px 1px;
+  border: 53x;
   padding: 15px 32px;
   text-align: center;
-  color: black;
   font-size: 16px;
 }
 
-/*  footer PAGINA PRINCIPAL */
-ul {
-  list-style-type: none;
-}
-
-.footer-link {
-  text-decoration: none;
-  color: black;
-  font-weight: 600;
-}
-
-.seccion2-footer {
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-footer {
-  background-color: blanchedalmond;
-  text-align: left;
-  margin: 10px;
-  padding: 10px;
-}
-
-.copy-footer {
-  text-align: center;
-  margin: 5px;
-  padding: 5px;
-}
-
-.seccion1-footer {
-  text-align: center;
-}
-.fa-brands {
-  padding: 5px;
-  margin: 5px;
-}
-
-/* PAGINA INICIO-footer CON GRID */
-.container-footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 1.9fr 0.6fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "seccion1-footer seccion2-footer"
-    "seccion1-footer seccion2-footer"
-    "seccion3-footer seccion3-footer";
-}
-
-.seccion1-footer {
-  grid-area: seccion1-footer;
-}
-
-.seccion2-footer {
-  grid-area: seccion2-footer;
-}
-
-.seccion3-footer {
-  grid-area: seccion3-footer;
-}
 /* PAGINA completa INICIO CON GRID */
 
 .container-index {
@@ -169,51 +99,27 @@ footer {
 }
 
 .titulo-productos {
-  text-align: left;
-  margin-left: 130px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
   color: burlywood;
 }
 
 /* PAGINA contacto */
 
 .titulo-contactanos {
-  text-align: left;
-  margin-left: 130px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
   color: burlywood;
 }
-
-.nombre-formulario {
-  margin: 50px;
+.contact_form {
+  display: block;
+  text-align: center;
 }
-
-.apellido-formulario {
-  margin: 50px;
-}
-
-.mail-formulario {
-  margin: 50px;
-}
-
-.sexo-hombre-formulario {
-  margin: 50px;
-}
-
-.sexo-mujer-formulario {
-  margin: 50px;
-}
-
-.condiciones-formulario {
-  margin: 50px;
-}
-
-.mensaje-formulario {
-  margin: 50px;
-}
-
-fieldset {
-  margin: 140px;
-  margin-top: 0px;
-  margin-bottom: 0%;
+.boton-contacto {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* PAGINA FAQ */
@@ -246,38 +152,16 @@ fieldset {
     "mision contactar-nosotros";
 }
 
-.sobre-nosotros {
-  grid-area: sobre-nosotros;
-  text-align: justify;
-  margin-left: 130px;
-  margin-right: 130px;
-}
-
-.mision {
-  grid-area: mision;
-  margin-left: 130px;
-}
-
-.quienes-somos {
-  grid-area: quienes-somos;
-  margin-left: 130px;
-  margin-right: 130px;
-}
-
-.contactar-nosotros {
-  grid-area: contactar-nosotros;
-  margin-right: 100px;
-}
-
 .nosotros-titulo {
-  text-align: left;
-  margin-left: 130px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
   color: burlywood;
 }
 
-iframe {
-  display: block;
-  margin: 0px auto;
+.mapa {
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 /* PAGINA carrito */
