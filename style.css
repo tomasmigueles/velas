@@ -125,15 +125,10 @@ body {
 /* PAGINA FAQ */
 
 .titulo-faq {
-  text-align: left;
-  margin-left: 140px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
   color: burlywood;
-}
-.preguntas {
-  margin-left: 130px;
-  margin-right: 130px;
-  text-align: justify;
-  padding: 10px;
 }
 
 /* PAGINA Nosotros */
@@ -167,9 +162,21 @@ body {
 /* PAGINA carrito */
 
 .hola-carrito {
+  align-items: center;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-.carrito-hola {
-  color: burlywood;
+/* PAGINA mediaquarry */
+@media (min-width: 767px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main-content {
+    width: auto;
+  }
+  .sidebar {
+    width: 30%;
+  }
 }
