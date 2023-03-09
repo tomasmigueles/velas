@@ -37,14 +37,14 @@ body {
   background-color: burlywood;
 }
 
-.boton-principalproductos .btn:hover {
-  background-color: burlywood;
-}
-
 .boton-principalproductos {
   align-items: center;
   text-align: center;
   margin: 50px 50px;
+}
+
+.boton-principalproductos .btn:hover {
+  background-color: burlywood;
 }
 
 /*  PARTE DE SUSBRIBITE PAGINA PRINCIPAL  */
