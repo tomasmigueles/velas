@@ -167,16 +167,22 @@ body {
   margin-bottom: 40px;
 }
 
-/* PAGINA mediaquarry */
+/* PAGINA media queries */
 @media (min-width: 767px) {
-  .row {
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    display: block;
     display: flex;
-    justify-content: space-between;
-  }
-  .main-content {
-    width: auto;
-  }
-  .sidebar {
-    width: 30%;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
   }
 }
