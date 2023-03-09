@@ -49,13 +49,12 @@ body {
 
 /*  PARTE DE SUSBRIBITE PAGINA PRINCIPAL  */
 
-.suscribite-formulario {
+.suscribite {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
-
 .suscribite-nombre {
   box-shadow: 1px 1px 1px 1px;
   border: 53x;
@@ -63,7 +62,6 @@ body {
   text-align: center;
   font-size: 16px;
 }
-
 /* PAGINA completa INICIO CON GRID */
 
 .container-index {
