@@ -1,0 +1,19 @@
+/* PAGINA media queries */
+@media (min-width: 767px) {
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    position: relative;
+  }
+}
